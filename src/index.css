@@ -1,13 +1,161 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 1px;
+    max-width: 100%;
+} 
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.6%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.3%;
+}
+
+.col-8{
+    width: 66.6%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.3%;
+}
+
+.col-11{
+    width: 91.6%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.stars {
+    position: relative;
+    overflow:hidden;
+    width:300px;
+    height:300px;
+ }
+ 
+ .rating-result {
+	width: 265px;
+	/* margin: 0 auto; */
+    margin-left: -10px;
+}
+
+.rating-result span {
+	padding: 0;
+	font-size: 32px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+.rating-result > span:before {
+	content: '★';
+}
+
+.rating-result > span.active {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.no-active{
+    color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+
+a{
+    display: block;
+    text-decoration: none; 
+    font-weight: bold; 
+    color:rgb(19, 156, 180)
+}
+
+a:hover { 
+    text-decoration: underline; 
+    color:rgb(204, 0, 78)
+}
+
+.text{
+    color: #333;
+    font-weight: 600;
+}
+
+.block{
+    border: 1px solid #dad5d5;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+img{
+    margin-left: 20%;
+    margin-bottom: 2px;
+    width: 200px;
+    height: 250px;
+}
+
+.triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid rgb(19, 156, 180);
+	border-right: 100px solid transparent;	
+    margin-left: -10px;	
+    margin-top: -10px;	
+    padding-top: -10px;
+    position: relative;
+}
+
+.triangle-topleft p{
+    position: absolute;
+    top: -75px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color:aliceblue;
 }
